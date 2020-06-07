@@ -1,6 +1,10 @@
 ---
-title: 多项式简介
-tags: ["math","polynomial"]
+title: 多项式部分简介
+tags:
+  - math
+  - poly
+author: Early, 1591493554
+
 ---
 
 ## 前置知识
@@ -45,12 +49,13 @@ $$
 f(x) \equiv R(x) \pmod{g(x)}
 $$
 
-### 多项式的对数函数与指数函数
+### <span id="ln-exp">多项式的对数函数与指数函数</span>
 
 对于一个多项式 $f(x)$ ，可以将其对数函数看作其与麦克劳林级数的复合：
 
 $$
-\ln{(1 - f(x))} = -\sum_{i = 1}^{+\infty} \frac{f^{i}(x)}{i} = \sum_{i = 1}^{+\infty} \frac{(-1)^{i - 1}f^{i}(x)}{i}
+\ln{(1 - f(x))} = -\sum_{i = 1}^{+\infty} \frac{f^{i}(x)}{i}\\
+\ln{(1 + f(x))} = \sum_{i = 1}^{+\infty} \frac{(-1)^{i - 1}f^{i}(x)}{i}
 $$
 
 其指数函数同样可以这样定义：

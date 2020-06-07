@@ -1,13 +1,17 @@
 ---
-title: 多项式除法 | 取模
-tags: ["math","polynomial"]
+title: 多项式除法|取模
+tags:
+  - math
+  - poly
+author: Early, 1591493554
+
 ---
 
-## Description
+## 描述
 
 给定多项式 $f\left(x\right),g\left(x\right)$ ，求 $g\left(x\right)$ 除 $f\left(x\right)$ 的商 $Q\left(x\right)$ 和余数 $R\left(x\right)$ 。
 
-## Method
+## 解法
 
 发现若能消除 $R\left(x\right)$ 的影响则可直接 [ **多项式求逆** ](../inv) 解决。
 

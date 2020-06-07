@@ -1,9 +1,13 @@
 ---
 title: 多项式牛顿迭代
-tags: ["math","polynomial"]
+tags:
+  - math
+  - poly
+author: Early, 1591493554
+
 ---
 
-## Description
+## 描述
 
 给定多项式 $g\left(x\right)$ ，已知有 $f\left(x\right)$ 满足：
 
@@ -43,9 +47,9 @@ $$
 f\left(x\right)\equiv f_{0}\left(x\right)-\frac{g\left(f_{0}\left(x\right)\right)}{g'\left(f_{0}\left(x\right)\right)}\pmod{x^{n}}
 $$
 
-## Examples
+## 例题
 
-### [多项式求逆](../inv)
+### <span id="inv"> [多项式求逆](../inv) </span>
 
 设给定函数为 $h\left(x\right)$ ，有方程：
 
@@ -68,7 +72,7 @@ $$
 T\left(n\right)=T\left(\frac{n}{2}\right)+O\left(n\log{n}\right)=O\left(n\log{n}\right)
 $$
 
-### [多项式开方](../sqrt)
+### <span id="sqrt"> [多项式开方](../sqrt) </span>
 
 设给定函数为 $h\left(x\right)$ ，有方程：
 
@@ -91,7 +95,7 @@ $$
 T\left(n\right)=T\left(\frac{n}{2}\right)+O\left(n\log{n}\right)=O\left(n\log{n}\right)
 $$
 
-### [多项式 exp](../ln-exp)
+### <span id="exp"> [多项式 exp](../ln-exp) </span>
 
 设给定函数为 $h\left(x\right)$ ，有方程：
 
