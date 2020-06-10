@@ -17,7 +17,7 @@ author: Early, 1591493554
 | Wrong Answer       |  `_wa`         | 答案错误。                                                                                  |
 | Presentation Error |  `_pe`         | 答案格式错误。注意包括 Codeforces 在内的许多 OJ 并不区分 PE 和 WA。                                          |
 | Partially Correct  |  `_pc(score)`  | 答案部分正确。仅限于有部分分的测试点，其中 `score` 为一个正整数，从 $0$ （没分）到 $100$ （可能的最大分数）。                      |
-| Fail               |  `_fail`       | validator 中表示输入不合法，不通过校验。<br>checker 中表示程序内部错误、标准输出有误或选手输出比标准输出更优，需要裁判/出题人关注。（也就是题目锅了） |
+| Fail               |  `_fail`       | validator 中表示输入不合法，不通过校验。<br/>checker 中表示程序内部错误、标准输出有误或选手输出比标准输出更优，需要裁判/出题人关注。（也就是题目锅了） |
 
 通常用程序的返回值表明结果，但是也有一些其他方法：创建一个输出 xml 文件、输出信息到 stdout 或其他位置……这些都通过下方函数表中的 `quitf` 函数来完成。
 
@@ -38,7 +38,7 @@ author: Early, 1591493554
 |  `void registerTestlibCmd(int argc, char* argv[])`                                                  | 注册程序为 checker                                         |
 |  `void registerInteraction(int argc, char* argv[])`                                                 | 注册程序为 interactor                                      |
 |  `void registerValidation()` / `void registerValidation(int argc, char* argv[])`                    | 注册程序为 validator                                       |
-|  `void registerGen(int argc, char* argv[], int randomGeneratorVersion)`                             | 注册程序为 generator<br> `randomGeneratorVersion` 推荐为 `1`  |
+|  `void registerGen(int argc, char* argv[], int randomGeneratorVersion)`                             | 注册程序为 generator<br/> `randomGeneratorVersion` 推荐为 `1`  |
 |  `void quit(TResult verdict, string message)` / `void quitf(TResult verdict, string message, ...)`  | 结束程序，返回 `verdict` ，输出 `message`                       |
 |  `void quitif(bool condition, TResult verdict, string message, ...)`                                | 如果 `condition` 成立，调用 `quitf(verdict, message, ...)`   |
 
